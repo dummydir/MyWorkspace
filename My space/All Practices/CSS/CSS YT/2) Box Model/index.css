@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* The box-sizing property allows us to include the padding and border 
+	in an element's total width and height. If you set box-sizing: border-box; 
+	on an element, padding and border are included in the width and height:
+	Both div are the same size*/
+}
+
+.container {
+	border: 4px dashed red;
+	font-size: 1.5rem;
+	margin: 1.5em;
+	padding: 1.5rem;
+	/* outline: 5px solid purple; */
+	outline-offset: -20px;
+}
+/* outline comes above the border 
+but if we use outline-offset it comes below the border */
+
+.circle {
+	margin: 3rem auto; /* 3 rem for top and bottom and \
+	auto for right and left it will center it automatically  */
+	background-color: gold;
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;
+	border-radius: 50px;
+	outline: 2px solid red;
+	outline-offset: 0.25rem;
+}

@@ -1,0 +1,41 @@
+header {
+	width: 50%;
+}
+
+/*
+    1rem = 16 pixes
+    REM = ROOT OF THE ELEMENT
+*/
+
+/*
+    1em = refers to parent element
+ */
+h1 {
+	border: 2px dashed red;
+	width: 50%;
+	font-size: 3rem;
+	padding: 0.5em;
+}
+
+body {
+	min-height: 100vh;
+}
+
+main {
+	font-size: 2rem;
+}
+
+p {
+	font-size: 2rem;
+}
+
+/*In CSS, the "em" unit is a relative unit of measurement typically used to define sizes relative 
+to the font size of the parent element. In this context, when you set the font size of the body to 2rem, 
+it means the font size of the body is twice the size of the root (html) element's font size.
+However, in your example, the font size of the body is set to 2rem, 
+which means it's twice the default font size of the root element. 
+Since the default font size of the root element is typically 16 pixels, 2rem would be 32 pixels.
+Therefore, the font size of the body is 32 pixels, */
+
+/* In terms of the "em" unit, 1em is equal to the font size of the current element. So, if you were to apply 
+1em to an element within the body with a font size of 2rem, it would be equivalent to 32px */

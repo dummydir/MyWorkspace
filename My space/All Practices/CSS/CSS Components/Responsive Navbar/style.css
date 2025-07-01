@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: "Courier New", Courier, monospace;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	min-height: 100%;
+}
+
+nav {
+	background-color: #2c2c2c;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav li {
+	display: flex;
+	height: 50px;
+	align-items: center;
+}
+
+nav a {
+	max-height: 100%;
+	padding: 1em 30px;
+	color: #fff;
+}
+
+nav a:hover {
+	color: bisque;
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+}

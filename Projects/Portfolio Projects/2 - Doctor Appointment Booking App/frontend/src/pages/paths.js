@@ -1,0 +1,8 @@
+export {default as LandingPage} from "./Home"
+export {default as About} from "./About"
+export {default as Contact} from "./Contact"
+export {default as Doctors} from "./Doctors"
+export {default as Login} from "./Login"
+export {default as MyAppointments} from "./MyAppointments"
+export {default as Profile} from "./Profile"
+export {default as Appointment} from "./Appointment"

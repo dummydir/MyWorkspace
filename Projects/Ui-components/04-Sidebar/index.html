@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+			rel="stylesheet" />
+		<title>Sidebar</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav class="sidebar">
+			<div class="sidebar-top-wrapper">
+				<div class="sidebar-top">
+					<a href="#" class="logo-wrapper">
+						<span class="hide company-name">Sidebar</span>
+					</a>
+				</div>
+				<button class="expand-btn" type="button">
+					<img src="assets/right-chevron_svgrepo.com.svg" alt="" />
+					<title id="exp-btn">Expand/Collapse Menu</title>
+				</button>
+			</div>
+			<div class="search-wrapper">
+				<img src="assets/search_svgrepo.com.svg" alt="" />
+				<input type="text" aria-labelledby="search-icon" />
+			</div>
+			<div class="sidebar-links">
+				<ul>
+					<li>
+						<a href="#dashboard" title="dashboard" class="tooltip">
+							<img
+								src="assets/interface-menu_svgrepo.com.svg"
+								alt="" />
+							<span class="link hide">Dashboard</span>
+							<span class="tooltip__content">Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a href="#market Overview" class="tooltip">
+							<img
+								src="assets/interface-ui-table-calendar_svgrepo.com.svg"
+								alt="" />
+							<span class="link hide">Market Overview</span>
+							<span class="tooltip__content"
+								>Market Overview</span
+							>
+						</a>
+					</li>
+					<li>
+						<a href="#analytics" class="tooltip">
+							<img
+								src="assets/analytics_svgrepo.com.svg"
+								alt="" />
+							<span class="link hide">Analytics</span>
+							<span class="tooltip__content">Analytics</span>
+						</a>
+					</li>
+					<li>
+						<a href="#settings" class="tooltip">
+							<img src="assets/settings_svgrepo.com.png" alt="" />
+							<span class="link hide">Settings</span>
+							<span class="tooltip__content">Settings</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	border: 0;
+	outline: 0;
+	margin: 0 auto;
+	padding: 8rem;
+	background-image: linear-gradient(
+		to right top,
+		#d16ba5,
+		#c777b9,
+		#ba83ca,
+		#aa8fd8,
+		#9a9ae1,
+		#8aa7ec,
+		#79b3f4,
+		#69bff8,
+		#52cffe,
+		#41dfff,
+		#46eefa,
+		#5ffbf1
+	);
+	border-radius: 8px;
+	box-shadow: -5px -5px 35px #845ec2;
+}
+
+.username,
+.password,
+input {
+	display: block;
+	border: 0;
+	outline: 0;
+	font-size: 1.25rem;
+	border-radius: 5px;
+}
+
+input {
+	padding: 0.25rem;
+}
+
+.submit {
+	cursor: pointer;
+	width: 50%;
+	border: 0;
+	outline: 0;
+	text-align: center;
+	padding: 0.5rem;
+	border-radius: 2rem;
+	font-size: 1.25rem;
+}
+
+i {
+	float: right;
+	cursor: pointer;
+}

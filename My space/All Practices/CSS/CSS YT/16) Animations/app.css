@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 1.5rem;
+	font-family: "Nunito", sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+main {
+	flex-grow: 1;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+div {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000;
+	display: grid;
+	place-content: center;
+}
+
+/* Transform ans Transition Code */
+
+div:first-child {
+	background-color: blue;
+	/* transform: translateY(-40px); */
+	/* animation: slide; */
+	/* transition: linear; */
+	/* animation-delay: 2s; */
+	/* left or right */
+	/* transform: rotateX(180deg); */
+	/* transform: scaleX(120%); */
+	/* transform: skewX(-10deg); */
+}
+div:nth-child(2) {
+	background-color: rgb(207, 215, 56);
+	/* animation: moveup; */
+	animation-delay: 0.5s;
+	/* transform: translateY(-2rem); */
+	/* transform: rotateY(45deg); */
+}
+div:last-child {
+	background-color: limegreen;
+	/* animation: moveup; */
+	animation-delay: 1s;
+	/* transform: translate(100%, -2rem); */
+	/* transform: scale(150%, 150%); */
+}
+
+div:hover {
+	background-color: aquamarine;
+	/* transition-property: background-color, transform;
+	transition-duration: 2s, 3s;
+	transition-delay: 0.5s; */
+	/* transition-timing-function: ease; */
+	transition: all 2s ease-in-out 0.5s;
+}
+
+div:last-child:hover {
+	transform: rotate(180deg);
+}
+
+/* ANIMATION Code */
+
+.animate {
+	animation-name: slide;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 1s;
+	animation-iteration-count: 4;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(0);
+	}
+	33% {
+		transform: translateX(600px) rotate(180deg);
+	}
+	66% {
+		transform: translateX(-600px) rotate(-180deg);
+	}
+	100% {
+		transform: translateY(0);
+		background-color: purple;
+	}
+}
+
+.anim {
+	opacity: 0;
+	transform: translateY(20px);
+	animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

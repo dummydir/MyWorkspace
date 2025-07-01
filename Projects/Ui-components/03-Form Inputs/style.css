@@ -1,0 +1,97 @@
+:root {
+	--primary-color: #eee;
+	--secondary-color: #fff;
+	--box-background: #040d12;
+	--outline-color: #435585;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: var(--primary-color);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	color: #fff;
+	max-width: fit-content;
+	width: 100%;
+	background: var(--box-background);
+	border-radius: 0.25rem;
+	padding-bottom: 2rem;
+}
+input::placeholder {
+	color: transparent;
+}
+
+.email,
+.password {
+	position: relative;
+	padding: 3rem 2rem 0;
+}
+
+.email__field,
+.password__field {
+	outline: 1.5px solid var(--primary-color);
+	border: 0;
+	padding: 0.5rem;
+	padding-right: 1rem;
+	border-radius: 0.15rem;
+	transition: all 0.3s;
+	background: var(--box-background);
+}
+
+.email__field:placeholder-shown ~ .email__label {
+	cursor: text;
+	color: var(--secondary-color);
+	background: var(--box-background);
+	top: 3.3rem;
+}
+
+.password__field:placeholder-shown ~ .password__label {
+	font-size: 1rem;
+	cursor: text;
+	color: var(--secondary-color);
+	background-color: var(--box-background);
+	top: 3.3rem;
+}
+
+label,
+.email__field:focus ~ .email__label {
+	position: absolute;
+	display: block;
+	top: 2.295rem;
+	padding: 0 0.15rem;
+	font-size: 1rem;
+	color: var(--secondary-color);
+	background-color: var(--box-background);
+	left: 2.5rem;
+	transition: all 0.3s;
+}
+
+label,
+.password__field:focus ~ .password__label {
+	position: absolute;
+	display: block;
+	top: 2.295rem;
+	padding: 0 0.15rem;
+	transition: all 0.3s;
+}
+
+.email__field:focus ~ .email__label {
+	color: var(--secondary-color);
+}
+
+.email__field:focus,
+.password__field:focus {
+	outline: 2.5px solid var(--outline-color);
+	color: var(--secondary-color);
+}

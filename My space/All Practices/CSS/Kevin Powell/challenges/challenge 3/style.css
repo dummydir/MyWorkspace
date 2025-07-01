@@ -1,0 +1,190 @@
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
+
+*/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.3rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-top: 0;
+}
+
+.container-n {
+	background-color: #437e8d;
+	min-height: auto;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 0;
+	max-width: 80%;
+	flex-shrink: 1;
+	border: 2px solid red;
+	margin: 0 auto;
+}
+
+.nav__list {
+	/* border: 2px solid red; */
+	display: flex;
+	list-style: none;
+	gap: 1rem;
+}
+
+.nav__list a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.15rem;
+	text-transform: uppercase;
+}
+
+.nav__link--button {
+	color: #136c72;
+	border-radius: 10em;
+}
+
+.nav__link--button a {
+	color: #000;
+}
+
+.container {
+	width: 80%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.row {
+	/* display: flex => flex container */
+	display: flex;
+	justify-content: space-between;
+
+	/* can't use yet */
+	/* gap: 100px; */
+}
+
+.col {
+	/* these are now flex items */
+	width: 100%;
+}
+
+.col + .col {
+	margin-left: 30px;
+}
+
+.hero {
+	padding: 100px 0;
+	background-color: #23424a;
+	color: #fff;
+}
+
+.hero__text {
+	width: 62%;
+}
+
+.hero__img {
+	width: 32%;
+	align-self: flex-start;
+}
+
+.hero p {
+	margin-bottom: 3em;
+}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #23424a;
+	font-weight: 900;
+	background-color: #38cfd9;
+	padding: 0.75em 2em;
+	border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+	opacity: 0.75;
+}
+
+.cont {
+	display: flex;
+	width: 100%;
+	margin-top: 50px;
+	/* border: 4px solid limegreen; */
+	padding: 10px 30px;
+}
+
+.about {
+	max-width: 60%;
+	padding: 0 25px;
+	/* border: 4px solid aqua; */
+}
+
+.about h1 {
+	color: #23424a;
+}
+.about p {
+	color: grey;
+	font-weight: 300;
+}
+
+.three-col {
+	width: 20%;
+	margin-left: 30px;
+	font-size: medium;
+	text-align: center;
+	background-color: #136c72;
+	padding: 20px 20px;
+	color: white;
+}
+
+.quick .cheap .quality p {
+	margin-top: auto;
+}
+
+@media (max-width: 800px) {
+	.nav {
+		display: block;
+	}
+	.row,
+	.cont {
+		display: block;
+	}
+	.hero__text,
+	.hero__img,
+	.about,
+	.three-col {
+		width: 100%;
+	}
+
+	.three-col {
+		margin: 0 auto;
+	}
+
+	.hero__img {
+		margin-top: 2em;
+	}
+}
